@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="attack_button">ATAK</string>
+    <string name="block_button">BLOK</string>
+    <string name="opponent_error_button">BŁĄD PRZ.</string>
+    <string name="service_ace_button">AS SERW.</string>
+    <string name="opponent_error">BP</string>
+    <string name="service_ace">AS</string>
+    <string name="team_a_name">Zespół A</string>
+    <string name="team_b_name">Zespół B</string>
+</resources>

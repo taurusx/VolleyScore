@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name" translatable="false">Volley Score</string>
+    //Scores initials
+    <string name="set_score_initial_a" translatable="false">0</string>
+    <string name="set_score_initial_b" translatable="false">0</string>
+    <string name="score_initial_a" translatable="false">0</string>
+    <string name="score_initial_b" translatable="false">0</string>
+    //Team names
+    <string name="team_a_name">Team A</string>
+    <string name="team_b_name">Team B</string>
+    //Points types names - abbreviations
+    <string name="attack" translatable="false">AT</string>
+    <string name="block" translatable="false">BL</string>
+    <string name="opponent_error">ER</string>
+    <string name="service_ace">SA</string>
+    //Points types names - buttons
+    <string name="attack_button">ATTACK</string>
+    <string name="block_button">BLOCK</string>
+    <string name="opponent_error_button">OP. ERROR</string>
+    <string name="service_ace_button">SRV. ACE</string>
+    //Detailed points - initial scores
+    <string name="attack_initial" translatable="false">0</string>
+    <string name="block_initial" translatable="false">0</string>
+    <string name="opponent_error_initial" translatable="false">0</string>
+    <string name="service_ace_initial" translatable="false">0</string>
+    //Reset
+    <string name="reset" translatable="false">Reset</string>
+</resources>
