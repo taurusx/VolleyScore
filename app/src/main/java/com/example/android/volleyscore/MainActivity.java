@@ -284,7 +284,8 @@ public class MainActivity extends AppCompatActivity {
                 resetScore(view);
                 scoreSetsTeamA += 1;
                 displaySetsForTeamA(scoreSetsTeamA);
-                Toast toast = Toast.makeText(MainActivity.this, "Team A won set no. " + setNumber, Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(MainActivity.this,
+                        "Team A won set no. " + setNumber, Toast.LENGTH_LONG);
                 toast.show();
                 setNumber += 1;
                 checkEndMatch(view);
@@ -303,7 +304,8 @@ public class MainActivity extends AppCompatActivity {
                 resetScore(view);
                 scoreSetsTeamB += 1;
                 displaySetsForTeamB(scoreSetsTeamB);
-                Toast toast = Toast.makeText(MainActivity.this, "Team B won set no. " + setNumber, Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(MainActivity.this,
+                        "Team B won set no. " + setNumber, Toast.LENGTH_LONG);
                 toast.show();
                 setNumber += 1;
                 checkEndMatch(view);
@@ -327,29 +329,34 @@ public class MainActivity extends AppCompatActivity {
      */
     public void checkEndMatch (View view) {
         if(scoreSetsTeamA == 3) {
-            final Toast toast = Toast.makeText(MainActivity.this, "Team A won match, congratulations!" +
+            final Toast toast = Toast.makeText(MainActivity.this,
+                    "Team A won match, congratulations!" +
                     "\nScore:   ( Team A ) " + scoreSetsTeamA + " : " + scoreSetsTeamB +
                     " ( Team B )", Toast.LENGTH_LONG);
             toast.show();
-            //Code snippet starts here and Toast gets "final".
+
+            //Code snippet for extending Toast message length.
             new CountDownTimer(9000, 1000) {
                 public void onTick(long millisUntilFinished) {toast.show();}
                 public void onFinish() {toast.show();}
             }.start();
+
             //Reset all scores to start new game.
             resetSetsScore(view);
             resetScore(view);
         } else if(scoreSetsTeamB == 3) {
-            final Toast toast = Toast.makeText(MainActivity.this, "Team B won match, congratulations!" +
+            final Toast toast = Toast.makeText(MainActivity.this,
+                    "Team B won match, congratulations!" +
                     "\nScore:   ( Team A ) " + scoreSetsTeamA + " : " + scoreSetsTeamB +
                     " ( Team B )", Toast.LENGTH_LONG);
             toast.show();
-            //Code snippet starts here and Toast gets "final".
+
+            //Code snippet for extending Toast message length.
             new CountDownTimer(9000, 1000) {
                 public void onTick(long millisUntilFinished) {toast.show();}
                 public void onFinish() {toast.show();}
             }.start();
-            //Reset all scores to start new game.
+            //Reset all scores to start a new game.
             resetSetsScore(view);
             resetScore(view);
         }

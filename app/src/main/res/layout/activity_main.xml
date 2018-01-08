@@ -4,7 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff2f2f2"
+    android:background="@color/myBackgroundColor"
     android:gravity="center_horizontal"
     tools:context="com.example.android.volleyscore.MainActivity">
 
@@ -37,6 +37,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -61,10 +64,9 @@
                 android:layout_height="wrap_content"
                 android:columnCount="4"
                 android:columnOrderPreserved="true"
-                android:orientation="horizontal"
-                android:rowCount="3"
                 android:gravity="center"
-                android:background="@drawable/full_score_border">
+                android:orientation="horizontal"
+                android:rowCount="3">
 
                 <TextView
                     android:id="@+id/team_a_score"
@@ -72,65 +74,65 @@
                     android:layout_height="wrap_content"
                     android:layout_columnSpan="4"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
                     android:layout_rowSpan="1"
                     android:background="@drawable/score_border"
                     android:fontFamily="sans-serif-light"
+                    android:gravity="center"
                     android:text="@string/score_initial_a"
                     android:textColor="#000"
                     android:textSize="56sp" />
 
                 <TextView
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/attack"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/attack" />
 
                 <TextView
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/block"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/block" />
 
                 <TextView
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/opponent_error"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/opponent_error" />
 
                 <TextView
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/service_ace"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/service_ace" />
 
                 <TextView
                     android:id="@+id/attack_score_team_a"
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/attack_initial"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/attack_initial" />
 
                 <TextView
                     android:id="@+id/block_score_team_a"
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/block_initial"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/block_initial" />
 
                 <TextView
                     android:id="@+id/opponent_error_score_team_a"
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/opponent_error_initial"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/opponent_error_initial" />
 
                 <TextView
                     android:id="@+id/service_ace_score_team_a"
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/service_ace_initial"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/service_ace_initial" />
             </GridLayout>
 
             <Button
@@ -142,8 +144,8 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="24dp"
                 android:onClick="addAttackTeamA"
-                android:textColor="@android:color/white"
-                android:text="@string/attack_button" />
+                android:text="@string/attack_button"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/buttonA2"
@@ -153,8 +155,8 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addBlockTeamA"
-                android:textColor="@android:color/white"
-                android:text="@string/block_button" />
+                android:text="@string/block_button"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/buttonA3"
@@ -164,8 +166,8 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addErrorTeamA"
-                android:textColor="@android:color/white"
-                android:text="@string/opponent_error_button" />
+                android:text="@string/opponent_error_button"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/buttonA4"
@@ -175,16 +177,10 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addAceTeamA"
-                android:textColor="@android:color/white"
-                android:text="@string/service_ace_button" />
+                android:text="@string/service_ace_button"
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="48dp"
-            android:background="@android:color/darker_gray" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -207,10 +203,9 @@
                 android:layout_height="wrap_content"
                 android:columnCount="4"
                 android:columnOrderPreserved="true"
-                android:orientation="horizontal"
-                android:rowCount="3"
                 android:gravity="center"
-                android:background="@drawable/full_score_border">
+                android:orientation="horizontal"
+                android:rowCount="3">
 
                 <TextView
                     android:id="@+id/team_b_score"
@@ -218,65 +213,65 @@
                     android:layout_height="wrap_content"
                     android:layout_columnSpan="4"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"
                     android:layout_rowSpan="1"
                     android:background="@drawable/score_border"
                     android:fontFamily="sans-serif-light"
+                    android:gravity="center"
                     android:text="@string/score_initial_b"
                     android:textColor="#000"
                     android:textSize="56sp" />
 
                 <TextView
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/attack"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/attack" />
 
                 <TextView
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/block"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/block" />
 
                 <TextView
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/opponent_error"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/opponent_error" />
 
                 <TextView
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/service_ace"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/service_ace" />
 
                 <TextView
                     android:id="@+id/attack_score_team_b"
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/attack_initial"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/attack_initial" />
 
                 <TextView
                     android:id="@+id/block_score_team_b"
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/block_initial"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/block_initial" />
 
                 <TextView
                     android:id="@+id/opponent_error_score_team_b"
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/opponent_error_initial"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/opponent_error_initial" />
 
                 <TextView
                     android:id="@+id/service_ace_score_team_b"
-                    android:background="@drawable/detailed_score_border"
-                    android:text="@string/service_ace_initial"
                     android:layout_gravity="fill_horizontal"
-                    android:gravity="center"/>
+                    android:background="@drawable/detailed_score_border"
+                    android:gravity="center"
+                    android:text="@string/service_ace_initial" />
             </GridLayout>
 
             <Button
@@ -288,8 +283,8 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="24dp"
                 android:onClick="addAttackTeamB"
-                android:textColor="@android:color/white"
-                android:text="@string/attack_button" />
+                android:text="@string/attack_button"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/buttonB2"
@@ -299,8 +294,8 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addBlockTeamB"
-                android:textColor="@android:color/white"
-                android:text="@string/block_button" />
+                android:text="@string/block_button"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/buttonB3"
@@ -310,8 +305,8 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addErrorTeamB"
-                android:textColor="@android:color/white"
-                android:text="@string/opponent_error_button" />
+                android:text="@string/opponent_error_button"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/buttonB4"
@@ -321,11 +316,16 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:onClick="addAceTeamB"
-                android:textColor="@android:color/white"
-                android:text="@string/service_ace_button" />
+                android:text="@string/service_ace_button"
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
 
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="48dp"
+            android:background="@android:color/darker_gray" />
 
     </LinearLayout>
 
@@ -342,7 +342,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:onClick="resetAll"
-            android:textColor="@android:color/white"
-            android:text="@string/reset" />
+            android:text="@string/reset"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 </RelativeLayout>
